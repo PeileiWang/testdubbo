@@ -47,7 +47,7 @@ public class UserController {
     }
 
     @RequestMapping("/selectbyid")
-    public Result selectById(int id) {
+    public Result<User> selectById(int id) {
         return ResultUtil.success(ResEnum.SUCCESS, userService.selectById(id));
     }
 
